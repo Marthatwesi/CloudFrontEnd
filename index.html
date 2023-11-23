@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/PHOTO-2021-07-22-23-30-20.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Personal Portfolio</title>
+</head>
+
+<body>
+ 
+  <nav class="navbar">   
+    <h1><a href="#" class="adminLink">Harmony Minds</a></h1>
+    <ul class="navigation">
+      <li><a href="#home">Home</a></li>
+      <li><a href="./about.html" class="nav-link">About Us</a></li>
+      <li><a href="./blog.html" class="nav-link">Blogs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="./login.html" class="nav-link">Login</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <section class="hero">
+    <img src="img/m3.jpg" alt="pc" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">Harmony Minds</h2>
+      <p class="bio-text">
+        Embrace Your Mind. Empower Your Soul. Welcome to your safe Haven.
+      </p>
+      <a href="./about.html"><button  id="btn1" class = "btn">About Us</button></a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Safe Spaces You Can Join</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="./img/Substance-Abuse-Treatment-for-Veterans.webp" alt="expense-tracker" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Recovery refuge</h3>
+        <p class="project-details">
+          A safe space where individuals can find solace and guidance while overcoming alcohol-related challenges. Please Join Us
+        </p>
+        <a href="https://drugabuse.com/online/free-online-drug-treatment-programs/" target="_blank" class="project-link">Join Community</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="./img/acohol_rehab_guide.jpeg" alt="netflic-clone" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Resilience Haven</h3>
+        <p class="project-details">
+          A supportive environment that encourages individuals to take steady steps towards sobriety and growth.
+        </p>
+        <a href="https://www.lionrockrecovery.com/drug-and-alcohol-addiction-treatment/online-rehab" target="_blank" class="project-link">Join Community</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="./img/recovery.webp" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Sober Earth</h3>
+        <p class="project-details">
+          A peaceful haven that nurtures the spirits of those on the path to sobriety and emotional well-being.
+        </p>
+        <a href="https://fountainofhoperehab.org/" target="_blank" class="project-link">Join Community</a>
+      </div>
+    </div>
+  </section>
+
+
+  
+    
+  <h2 class="contact-h2">Please Contact Us Here</h2>
+  <div class="login-form">
+   
+    <form class="form" id="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name.." onkeyup='validateName()'>
+        <span class='error-message' id='name-error'></span>
+    </div>
+
+    <div class="form-group">
+        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+        <span class='error-message' id='email-error'></span>
+    </div>   
+
+    <div class="form-group">
+        <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+        <span class='error-message' id='message-error'></span>
+    </div>    
+    <button id="btn1" class="btn">Submit</button>
+    <span class='error-message' id='submit-error'></span>
+</form>
+ </div>
+      
+  <footer>
+    <div class="socials">
+      <div class="vl"></div>
+      <a href="#" target="_blank"><img src="./img/icons8-facebook-circled.gif" alt="Twitter" loading="lazy"
+          class="socicon" /></a>
+      <a href="#" target="_blank"><img src="./img/icons8-github.gif" alt="Instagram" loading="lazy"
+          class="socicon" /></a>
+      <a href="#" target="_blank"><img src="./img/icons8-instagram.gif" alt="Linkedin" loading="lazy"
+          class="socicon" /></a>
+      <div class="vl2"></div>
+    </div>
+    
+  </footer>
+
+  <dialog class="loader">
+    <img src="./img/load.gif" alt="">
+  </dialog>
+  
+  <dialog class="msgSent">
+    <img src="./img/msgSent.png" alt="">
+    <h1>SENT!</h1>
+    <Button class="okBtn">OK</Button>
+   </dialog>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

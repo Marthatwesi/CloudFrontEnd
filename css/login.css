@@ -1,0 +1,167 @@
+/* login section styling */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #A15E42;
+}
+.login-form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(162, 163, 164, 0.28);
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.336);
+  width: 600px;
+  height: 300px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeLink{
+  color: black ;
+}
+.homeLink a:hover {
+  color: #A15E42;
+  border-bottom: 2px solid grey;}
+
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  padding:10px 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  caret-color: black;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  padding: 10px;
+}
+
+.loader{
+  opacity: 0.155;
+  border: none;
+  position: absolute;
+  left:42%;
+  top:20%;
+  /* transform:translate (-50%,50%) */
+}
+.loader img{
+  width: 200px;
+  height: auto;
+}
+
+
+form input{
+  border-bottom-width: 2px;
+  width: 250px;
+  height: 100%;
+  background: none;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #A15E42;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  margin-right: 3px;
+  margin-top: 2%;
+  font-size: 18px;
+  pointer-events: none;
+}
+.input-area .icon{
+  left: 15px;
+  color: black;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #A15E42;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: black;
+}
+form input::placeholder{
+  color: rgba(0, 0, 0, 0.557);
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #A15E42;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  background: #A15E42;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #A15E42;
+}

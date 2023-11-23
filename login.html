@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="./img/PHOTO-2021-07-22-23-30-20.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title></title>
+</head>
+<body>
+  <h1><a href="./index.html" class="adminLink">Harmony Minds</a></h1>
+  <h3 class="third-heading">Please login Here!</h3>
+  <div class="container">
+        <div class="login-form">
+          <form action="./index.html"class="form">
+            <div class="field email">
+              <div class="input-area">
+                <i class="icon fas fa-envelope"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+                <input type="text" placeholder="Email Address">
+              </div>
+              <div class="error error-txt" id="showE">Please enter your email</div>
+            </div>
+            <div class="field password">
+              <div class="input-area">
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+                <input type="password" placeholder="Password">
+              </div>
+              <div class="error error-txt" id="showP">Please enter your Password</div>
+              <div class="error error-txt incorrect">Incorrect Email or Password</div>
+            </div>
+            <div class="input-area" id="clickBtn">
+              <input type="submit" value="login">
+            </div>
+            <p>Have no account?<a href="signup.html">Signup</a></p>
+          </form>
+        </div>
+  </div>
+  <dialog class="loader">
+    <img src="./img/load.gif" alt="">
+  </dialog>
+   <script src="js/valid.js"></script>
+</body>
+</html>
+
+
+  

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog1.css">
+    <title></title>
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <h1><a href="#">MARTHA TWESIGYE</a></h1>
+        <ul class="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="./about.html" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="./login.html" class="nav-link">Login</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+      </nav> -->
+
+      <article class="post">
+        <div>
+          <div class="absolute-bg">
+            <img src="./img/blog1.jpg" alt="robot"
+                      width="1100" height="900" class="blog-banner-img">
+          </div>
+         
+        </div>
+        <div class="post__container">
+          <span class="post__category">Harmony Minds</span>
+          
+          <div class="post__content">
+            <header>
+              <time class="post__time"></time>
+              <h2 class="post__header"><span></span> <span></span> <span></span></h2>
+            </header>
+          
+            <p class="post__text"></p>
+          </div>
+          <div class="post__link">
+            <a href="./blog.html">Back To Blogs</a>
+           <a href="#commentsection">View Comments</a>
+          </div>
+        </div>
+      </article>
+      
+      <section class="commentsection" id="commentsection">
+        <ul class="comment-section">
+
+          <!-- <li class="comment user-comment">
+    
+                    <div class="info">
+                        <a href="#">Anie Silverston</a>
+                    </div>
+    
+                    <a class="avatar" href="#">
+                        <img src="" width="35" alt="Profile Avatar" title="Anie Silverston" />
+                    </a>
+                 <p>Very insightful blog</p>
+    
+          </li>
+     --> 
+          <!-- <li class="comment user-comment">
+    
+                    <div class="info">
+                        <a href="#">Martha.T</a>
+                        <span>3 hours ago</span>
+                    </div>
+    
+                    <a class="avatar" href="#">
+                        <img src="./img/PHOTO-2021-07-22-23-30-20.jpg" width="35" alt="Profile Avatar" title="Martha.T" />
+                    </a>
+    
+                    <p>Thank you. Really Appreciate that.</p>
+          </li>
+    
+          <li class="comment user-comment">
+    
+                    <div class="info">
+                        <a href="#">Bradley Jones</a>
+                        <span>1 hour ago</span>
+                    </div>
+    
+                    <a class="avatar" href="#">
+                        <img src="./img/prof1.jpg" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                    </a>
+    
+                    <p>This would be an amazing debate topic. Thanks for the Insight.</p>
+    
+          </li>
+    
+                <li class="comment user-comment">
+    
+                    <div class="info">
+                        <a href="#">Martha.T</a>
+                        <span>1 hour ago</span>
+                    </div>
+    
+                    <a class="avatar" href="#">
+                        <img src="./img/PHOTO-2021-07-22-23-30-20.jpg" width="35" alt="Profile Avatar" title="Martha.T" />
+                    </a>
+    
+                    <p>You are Most welcome. Robots are surely taking over but humans stay the most inteligent. Nothing will beat that.</p>
+                </li> -->
+    
+        </ul>
+        <ul>
+          <li class="write-new">
+    
+            <form class="newComment">
+
+                
+            <textarea placeholder="Write your comment here" onkeyup='validateComment()' id='comment-message' name="comments"></textarea>
+            <small class="com-error">error</small>
+                <span class='error-comment' id='comment-error'></span>
+                <div>
+                    <a  href="#"><button onclick='return validateCommentForm()' type="submit" >Submit</button></a>
+                </div>
+
+            </form>
+
+        </li>
+        </ul>
+    
+      </section>
+      <script src="js/comment.js"></script>
+</body>
+</html>
